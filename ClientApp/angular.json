@@ -29,7 +29,15 @@
               "src/customstyles/odometer.min.css",
               "src/customstyles/swiper.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/scripts/fancybox.min.js",
+              "src/scripts/odometer.min.js",
+              "src/scripts/splitting.min.js",
+              "src/scripts/swiper.min.js",
+              "src/scripts/wow.min.js",
+              "src/scripts/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
