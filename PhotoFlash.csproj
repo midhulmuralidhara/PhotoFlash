@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\images\" />
+    <Folder Include="ClientApp\src\customstyles\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
 
