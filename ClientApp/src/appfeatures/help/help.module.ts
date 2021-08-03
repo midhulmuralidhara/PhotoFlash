@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HelpComponent } from './help.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [HelpComponent],
   imports: [
     CommonModule
   ]

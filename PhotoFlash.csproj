@@ -18,15 +18,21 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientApp\src\customstyles\**" />
+    <Compile Remove="ClientApp\src\scripts\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\src\customstyles\**" />
+    <Content Remove="ClientApp\src\scripts\**" />
+    <EmbeddedResource Remove="ClientApp\src\customstyles\**" />
+    <EmbeddedResource Remove="ClientApp\src\scripts\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\src\customstyles\**" />
+    <None Remove="ClientApp\src\scripts\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ClientApp\src\images\" />
-    <Folder Include="ClientApp\src\customstyles\" />
-    <Folder Include="ClientApp\src\scripts\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
 

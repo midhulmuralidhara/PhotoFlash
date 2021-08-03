@@ -5,13 +5,13 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HelpModule } from '../help/help.module';
-import { HomescreenModule } from '../homescreen/homescreen.module';
-import { PhotogalleryModule } from '../photogallery/photogallery.module';
-import { UserloginModule } from '../userlogin/userlogin.module';
-import { HomescreenComponent } from '../homescreen/homescreen.component';
-import { UserloginComponent } from '../userlogin/userlogin.component';
-import { HelpComponent } from '../help/help.component';
+import { HelpModule } from '../appfeatures/help/help.module';
+import { HomescreenModule } from '../appfeatures/homescreen/homescreen.module';
+import { PhotogalleryModule } from '../appfeatures/photogallery/photogallery.module';
+import { UserloginModule } from '../appfeatures/userlogin/userlogin.module';
+import { HomescreenComponent } from '../appfeatures/homescreen/homescreen.component';
+import { UserloginComponent } from '../appfeatures/userlogin/userlogin.component';
+import { HelpComponent } from '../appfeatures/help/help.component';
 
 
 @NgModule({
