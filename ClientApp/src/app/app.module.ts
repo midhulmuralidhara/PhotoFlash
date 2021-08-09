@@ -9,9 +9,7 @@ import { HelpModule } from '../appfeatures/help/help.module';
 import { HomescreenModule } from '../appfeatures/homescreen/homescreen.module';
 import { PhotogalleryModule } from '../appfeatures/photogallery/photogallery.module';
 import { UserloginModule } from '../appfeatures/userlogin/userlogin.module';
-import { HomescreenComponent } from '../appfeatures/homescreen/homescreen.component';
-import { UserloginComponent } from '../appfeatures/userlogin/userlogin.component';
-import { HelpComponent } from '../appfeatures/help/help.component';
+import { routes } from './app.routing';
 
 
 @NgModule({
@@ -26,12 +24,7 @@ import { HelpComponent } from '../appfeatures/help/help.component';
     HomescreenModule,
     PhotogalleryModule,
     UserloginModule,
-    RouterModule.forRoot([
-      { path: 'home', component: HomescreenComponent },
-      { path: 'login', component: UserloginComponent },
-      { path: 'help', component: HelpComponent },
-      { path: '', redirectTo:'home',pathMatch:'full' }
-    ])
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
