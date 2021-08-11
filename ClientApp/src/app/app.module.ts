@@ -10,6 +10,7 @@ import { HomescreenModule } from '../appfeatures/homescreen/homescreen.module';
 import { PhotogalleryModule } from '../appfeatures/photogallery/photogallery.module';
 import { UserloginModule } from '../appfeatures/userlogin/userlogin.module';
 import { routes } from './app.routing';
+import { CommonfeatureModule } from '../appfeatures/common/commonfeature.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { routes } from './app.routing';
     HomescreenModule,
     PhotogalleryModule,
     UserloginModule,
+    CommonfeatureModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

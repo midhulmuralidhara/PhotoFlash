@@ -23,6 +23,7 @@
             "assets": ["src/assets","src/images","src/icons"],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/videogular2/fonts/videogular.css",
               "src/styles.css",
               "src/commonstyles/fancybox.min.css",
               "src/commonstyles/hamburger.min.css",
