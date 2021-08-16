@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-homescreen',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomescreenComponent implements OnInit {
 
-  constructor() { }
+  private routerVal:any;
+  constructor(router:Router) { 
+    this.routerVal = router;
+  }
 
   ngOnInit(): void {
   }
+
+  
 
 }

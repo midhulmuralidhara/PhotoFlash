@@ -879,7 +879,6 @@ textarea {
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: -100%;
   top: 0;
   z-index: 10;
   text-align: center;
@@ -893,7 +892,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   transition-delay: 1s;
-  opacity: 0;
+  
 }
 
   .left-side .logo {
