@@ -37,7 +37,8 @@
               "src/commonscripts/splitting.min.js",
               "src/commonscripts/swiper.min.js",
               "src/commonscripts/wow.min.js",
-              "src/commonscripts/scripts.js"
+              "src/commonscripts/scripts.js",
+              "node_modules/hls.js/dist/hls.js"
             ]
           },
           "configurations": {
