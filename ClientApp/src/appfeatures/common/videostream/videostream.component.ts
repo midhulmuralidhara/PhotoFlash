@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { VgHLS } from 'videogular2/compiled/src/streaming/vg-hls/vg-hls';
 
 @Component({
   selector: 'app-videostream',
@@ -8,14 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideostreamComponent implements OnInit {
 
+  @ViewChild(VgHLS) vgHls: VgHLS;
+
   constructor() { }
 
   ngOnInit(): void {
 
-    const headers = new Headers();
-        headers.append('Access-Control-Allow-Headers', 'Content-Type');
-        headers.append('Access-Control-Allow-Methods', 'GET');
-        headers.append('Access-Control-Allow-Origin', '*');
   }
 
 }

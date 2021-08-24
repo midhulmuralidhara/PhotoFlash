@@ -11,6 +11,7 @@ import { PhotogalleryModule } from '../appfeatures/photogallery/photogallery.mod
 import { UserloginModule } from '../appfeatures/userlogin/userlogin.module';
 import { routes } from './app.routing';
 import { CommonfeatureModule } from '../appfeatures/common/commonfeature.module';
+import { RouteGuard } from './app.routeguard';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { CommonfeatureModule } from '../appfeatures/common/commonfeature.module'
     CommonfeatureModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [RouteGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
