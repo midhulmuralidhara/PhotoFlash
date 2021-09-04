@@ -12,6 +12,10 @@ import { UserloginModule } from '../appfeatures/userlogin/userlogin.module';
 import { routes } from './app.routing';
 import { CommonfeatureModule } from '../appfeatures/common/commonfeature.module';
 import { RouteGuard } from './app.routeguard';
+import { HttpService } from 'src/genericservices/httpcommon.service';
+import { ClientConfigurationService } from 'src/genericservices/clientconfiguration.service';
+import { GoliveModule } from 'src/appfeatures/golive/golive.module';
+import { ConfigValuesService } from 'src/genericservices/configvalues.service';
 
 
 @NgModule({
@@ -27,9 +31,10 @@ import { RouteGuard } from './app.routeguard';
     PhotogalleryModule,
     UserloginModule,
     CommonfeatureModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    GoliveModule
   ],
-  providers: [RouteGuard],
+  providers: [RouteGuard,HttpService,ClientConfigurationService, ConfigValuesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

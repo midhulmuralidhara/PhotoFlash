@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { VgHLS } from 'videogular2/compiled/src/streaming/vg-hls/vg-hls';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { VgHLS } from 'videogular2/compiled/src/streaming/vg-hls/vg-hls'; 
+
 
 @Component({
   selector: 'app-videostream',
@@ -9,6 +10,8 @@ import { VgHLS } from 'videogular2/compiled/src/streaming/vg-hls/vg-hls';
 export class VideostreamComponent implements OnInit {
 
   @ViewChild(VgHLS) vgHls: VgHLS;
+  token:string = '2_HzU2I2DKGEly_NZcbCfGLg4F7mP2wgrgMZsH5LiaPWT';
+  @Input() awsPath:any;
 
   constructor() { }
 

@@ -17,7 +17,7 @@ export class HomescreenComponent implements OnInit {
   }
 
   goLive(){
-    this.routerVal.navigate(['/help']);
+    this.routerVal.navigate(['/golive']);
   }
 
 }

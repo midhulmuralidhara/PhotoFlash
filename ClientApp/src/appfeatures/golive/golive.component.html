@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12">
+        <i class="fa fa-arrow-left" aria-hidden="true" (click)="backToHome()"></i>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" *ngIf = "isAWS">
+        <app-videostream [awsPath]="aWSUrl"></app-videostream>
+    </div>
+    <div class="col-md-12" *ngIf = "!isAWS">
+        <iframe height="100%" width="50%" [src]="youtubeURL | safePipe" allowfullscreen ></iframe>
+    </div>
+</div>

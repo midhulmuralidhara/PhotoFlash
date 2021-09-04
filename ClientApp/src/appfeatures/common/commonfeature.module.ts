@@ -5,11 +5,12 @@ import { VgCoreModule } from 'videogular2/compiled/core';
 import { VgControlsModule } from 'videogular2/compiled/controls';
 import { VgBufferingModule} from 'videogular2/compiled/buffering';
 import { VgStreamingModule } from 'videogular2/compiled/streaming';
+import { SafePipe } from './safepipe';
 
 
 
 @NgModule({
-  declarations: [VideostreamComponent],
+  declarations: [VideostreamComponent, SafePipe],
   imports: [
     CommonModule,
     VgCoreModule,
@@ -17,6 +18,6 @@ import { VgStreamingModule } from 'videogular2/compiled/streaming';
     VgBufferingModule,
     VgStreamingModule
   ],
-  exports:[VideostreamComponent]
+  exports:[VideostreamComponent, SafePipe]
 })
 export class CommonfeatureModule { }

@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\app.routing.ts" />
+    <None Remove="ClientApp\src\genericservices\httpcommon.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +44,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app.routing.ts" />
+    <TypeScriptCompile Include="ClientApp\src\genericservices\httpcommon.service.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
