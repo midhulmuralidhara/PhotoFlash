@@ -13,6 +13,8 @@ export class VideostreamComponent implements OnInit {
   token:string = '2_HzU2I2DKGEly_NZcbCfGLg4F7mP2wgrgMZsH5LiaPWT';
   @Input() awsPath:any;
 
+  
+
   constructor() { }
 
   ngOnInit(): void {

@@ -37,6 +37,7 @@
 		
 		// HAMBURGER MENU
 		$('.hamburger').on('click', function(e) {
+			debugger;
 			if ($(".site-navigation").hasClass("active")) {
 				$("body").toggleClass("overflow");
 				$(".site-navigation").removeClass("active");

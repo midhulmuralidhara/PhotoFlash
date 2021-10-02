@@ -19,11 +19,14 @@
   
         <vg-fullscreen></vg-fullscreen>
     </vg-controls>
-  
+
     <!-- <video #media [vgMedia]="media" id="singleVideo" [vgHlsHeaders]="headers" [vgHls]="'https://3d84a54ba40c.us-west-2.playback.live-video.net/api/video/v1/us-west-2.834277921230.channel.MYUTNoKQbTpx.m3u8'" type="video/mp4" crossorigin>
     
     </video> -->
+      
     <video #media [vgMedia]="media" id="singleVideo" [vgHls]="awsPath" preload="auto" crossorigin="anonymous">
         
     </video>
  </vg-player>
+
+ 

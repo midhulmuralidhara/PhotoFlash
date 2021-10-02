@@ -1,13 +1,150 @@
-<div class="row">
-    <div class="col-md-12">
-        <i class="fa fa-arrow-left" aria-hidden="true" (click)="backToHome()"></i>
+<div class="preloader">
+    <div class="layer"></div>
+    <!-- end layer -->
+    <div class="inner">
+      <figure> <img src="../../images/preloader.gif" alt="Image"> </figure>
+      <span>Site Loading</span> </div>
+    <!-- end inner --> 
+  </div>
+  <!-- end preloader -->
+  <div class="page-transition">
+    <div class="layer"></div>
+    <!-- end layer --> 
+  </div>
+  <!-- end page-transition -->
+  <nav class="site-navigation">
+    <div class="layer"></div>
+    <!-- end layer -->
+    <div class="inner">
+      <ul data-splitting>
+        <li><a (click)="backToHome()">HOME</a> <small>All About Us</small> </li>
+        <li><a>All About Us</a><small>All About Us</small> </li>
+        <li><a>Our all projects</a><small>Our all projects</small> </li>
+        <li><a>Say hello</a><small>Say hello</small> </li>
+      </ul>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12" *ngIf = "isAWS">
-        <app-videostream [awsPath]="aWSUrl"></app-videostream>
+    <!-- end inner --> 
+  </nav>
+  <!-- end site-navigation -->
+  <div class="social-media">
+    <div class="layer"> </div>
+    <!-- end layer -->
+    <div class="inner">
+      <h5>Social Share </h5>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
     </div>
-    <div class="col-md-12" *ngIf = "!isAWS">
-        <iframe height="100%" width="50%" [src]="youtubeURL | safePipe" allowfullscreen ></iframe>
-    </div>
-</div>
+  </div>
+  
+  
+<main>
+    <aside class="left-side">
+        <div class="logo"> <a href="index.html"><img src="../../images/logo.png" alt="Image"></a> </div>
+        <!-- end logo -->
+        <div class="hamburger" id="hamburger">
+        <div class="hamburger__line hamburger__line--01">
+            <div class="hamburger__line-in hamburger__line-in--01"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--02">
+            <div class="hamburger__line-in hamburger__line-in--02"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--03">
+            <div class="hamburger__line-in hamburger__line-in--03"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--cross01">
+            <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--cross02">
+            <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+        </div>
+        </div>
+        <!-- end hamburger -->
+        <div class="follow-us"> FOLLOW US </div>
+        <!-- end follow-us -->
+        <div class="equalizer"> <span></span> <span></span> <span></span> <span></span> </div>
+        <!-- end equalizer --> 
+    </aside>
+    <header class="page-header">
+        <div class="video-bg">
+            <img src="../../images/slide01.jpg">
+        </div>
+        <!-- end video-bg -->
+        <div class="inner">
+            <div class="container">
+                <h1>Rahul & Aswathy</h1>
+                <p>We provide a free day to experience our benefits of digital world</p>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end inner -->
+        </header>
+        <section class="case-study">
+            <div class="container">
+                <div class="row">
+                <div class="col-12 wow" data-splitting>
+                  <h3 class="section-title">MARRIAGE DETAILS GOES <br>
+                    FOR AMAZING CLIENTS</h3>
+                </div>
+                <!-- end col-12 -->
+                <div class="col-lg-8 col-md-10 wow" data-splitting>
+                 <h6>DESCRIPTION</h6>
+                  <p>We work closely with your development team. markettting profissionals and stakeholder to design and develop UX and UI that make your website. application or software a joy to use,</p>
+                </div>
+                <!-- end col-12	 -->
+                <div class="col-md-5 wow" data-splitting>
+                    <h6>ABOUT CASE</h6>
+                  <p>Design and develop UX and UI that make your website. application or software a joy to use,</p>
+                </div>
+                <!-- end col-6 -->
+                <div class="col-md-5 wow" data-splitting>
+                    <h6>CASE LAUNCH</h6>
+                  <p>20, Semptember 2019 - Web design & Mobile app</p>
+                </div>
+                <!-- end col-6 -->
+                </div>
+                <!-- edn row -->
+            </div>
+            <div class="container-fluid">
+                <div class="row" >
+                    <div class="col-md-12" *ngIf = "isAWS">
+                        <app-videostream [awsPath]="aWSUrl"></app-videostream>
+                    </div>
+                    <div class="col-md-12" style="height: 100%;" *ngIf = "!isAWS">
+                        <iframe height="100%" width="50%" [src]="youtubeURL | safePipe" allowfullscreen ></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <figure><img src="../../images/works01.jpg" alt="Image"></figure>
+                    </div>
+                    <!-- end col-4 -->
+                    <div class="col-md-4">
+                        <figure><img src="../../images/works02.jpg" alt="Image"></figure>
+                    </div>
+                    <!-- end col-4 -->
+                    <div class="col-md-4">
+                        <figure><img src="../../images/works03.jpg" alt="Image"></figure>
+                    </div>
+                    <!-- end col-4 -->
+                    <div class="col-md-6">
+                        <figure><img src="../../images/works04.jpg" alt="Image"></figure>
+                    </div>
+                    <!-- end col-6 -->
+                    <div class="col-md-6">
+                        <figure><img src="../../images/works05.jpg" alt="Image"></figure>
+                    </div>
+                    <!-- end col-6 -->
+                    <div class="col-12">
+                        <figure><img src="../../images/slide01.jpg" alt="Image"></figure>
+                    </div>
+                    <!-- end col-12 -->
+                    <div class="col-12 wow" data-splitting>
+                        <h5>Thanks for Watching</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
