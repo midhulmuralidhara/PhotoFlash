@@ -2,6 +2,6 @@
     "configData":{
         "awsURL":"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8",
         "youtubeURL": "https://www.youtube.com/embed/YO8VvY5zfXw?autoplay=1", 
-        "viewViaAWS":false
+        "viewViaAWS":true
     }
 }

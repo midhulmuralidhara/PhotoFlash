@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VideostreamComponent } from './videostream/videostream.component';
-import { VgCoreModule } from 'videogular2/compiled/core';
-import { VgControlsModule } from 'videogular2/compiled/controls';
-import { VgBufferingModule} from 'videogular2/compiled/buffering';
-import { VgStreamingModule } from 'videogular2/compiled/streaming';
 import { SafePipe } from './safepipe';
+import { NgIvsModule } from '@cotufa82/ng-ivs';
 
 
 
@@ -13,10 +10,7 @@ import { SafePipe } from './safepipe';
   declarations: [VideostreamComponent, SafePipe],
   imports: [
     CommonModule,
-    VgCoreModule,
-    VgControlsModule,
-    VgBufferingModule,
-    VgStreamingModule
+    NgIvsModule
   ],
   exports:[VideostreamComponent, SafePipe]
 })
